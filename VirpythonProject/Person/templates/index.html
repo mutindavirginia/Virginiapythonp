@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="text-info text-center">Welcome Home</h1>
+<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, eveniet!</p>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" name="save">Submit</button>
+</form>
+{% endblock %}

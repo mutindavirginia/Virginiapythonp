@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+
+{% block content %}
+
+<h1>REGISTER FORM</h1>
+<P>Please fill the form below to register</P>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn btn-outline-success" type="submit" name="save">SUBMIT</button>
+</form>
+
+
+{% endblock %}
